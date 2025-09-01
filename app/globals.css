@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('../src/style/fonts/FuturaPT-Demi.eot');
+  src: local('Futura PT Demi'), local('FuturaPT-Demi'),
+      url('../src/style/fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+      url('../src/style/fonts/FuturaPT-Demi.woff2') format('woff2'),
+      url('../src/style/fonts/FuturaPT-Demi.woff') format('woff'),
+      url('../src/style/fonts/FuturaPT-Demi.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
+
+:root {
+  --ButterСream: rgb(252 250 246);
+  --Alabaster: rgb(246 243 235);
+  --Graphite: rgb(53 49 46);
+}
+
+
+
+html,
+body {
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  background: var(--background);
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.layout {
+  height: 100%;
+  display:  grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (min-width: 1024px) {
+  .global-padiing{
+    padding-left: 220px;
+    padding-right: 220px;
+  }  
+}
+
+
+@media (max-widtn: 1024px) {
+  
+}
