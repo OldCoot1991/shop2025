@@ -4,7 +4,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import theme from "@/theme";
 import { LayoutContainer } from "@/layout/Layout";
-import { MainContainer } from "@/components/MainContainer";
 
 export const metadata: Metadata = {
   title: "Home shop",
@@ -23,7 +22,7 @@ export default function RootLayout({
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             <LayoutContainer>
-              <MainContainer>{children}</MainContainer>
+              {children}
             </LayoutContainer>
           </ThemeProvider>
         </AppRouterCacheProvider>
